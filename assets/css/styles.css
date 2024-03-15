@@ -162,7 +162,7 @@ h2 {
   height: 40px;
   text-align: left;
 }
-/*table info*/
+/*table info (jeg kunne ikke få texten til at rykke sig lidt til højre, så jeg gave op*/
 .funds tbody {
   background-color: #CDB888;
   height: 40px;
@@ -176,11 +176,84 @@ h2 {
   justify-content: center;
 }
 
-/*BOGEN*/
+/*BOGEN*/ /*jeg gjorde det jeg kunne, men jeg gav op på resten af denne side...*/
 /*main funktion*/
 .bogen {
   background-color: #706F6F;
   width: 1366px;
   height: 550px;
   margin-top: 75px;
+}
+.bog {
+  color: white;
+  max-width: 1080px;
+  padding-top: 75px; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 400px;
+}
+/*left side*/
+.bog article {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.bog h2 {
+  margin-bottom: 10px;
+}
+.bog p {
+  margin-bottom: 61px;
+}
+/*right side*/ 
+.bog img {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/*NYHEDSBREV*/ 
+/*main funktion*/
+.nyhed {
+  height: 360px;
+}
+/*text*/
+.nyhed h2 {
+  padding-bottom: 33px;
+}
+.nyhed p {
+  display: flex;
+  justify-content: center;
+}
+/*formular*//*jeg kunne ikke regne ud, hvordan man rediger en forms udesedne, så jeg gav op*/
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+/*FOOTER*/
+/*..*/
+footer {
+  background-color: #CDB888;
+  padding: 32px 0;
+}
+footer ul li {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  font-family: raleway; 
+  gap: 72px;
+  margin: 0 auto;
+}
+footer li {
+  color: white;
+  margin-right: auto;
+}
+/*icons*/ /*jeg kan ikke finde ud af at rykke dem til højre, så jeg giver op! hyg dig med at se alle mine fejl igennem*/
+footer img {
+  background-color: white;
+  padding: 14px 14px;
+  border-radius: 50%;
 }
